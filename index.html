@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX PAKISTAN</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="manifest" href="./manifest.json">
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"></a>
+      </div>
+      <a class="navbar-brand" rel="home" href="#">
+        <img style="max-width:45px; margin-top: -7px;"
+        src="./download.jpg">
+    </a>
+    <form class="navbar-form navbar-left" action="/action_page.php">
+        <!-- <div class="form-group"> -->
+            <input type="text" size="30px" id="myinputs" class="form-control" placeholder="Pakisan">
+        <!-- </div> -->
+        <div class="form-group">
+            <input type="text" size="68px" id="look" class="form-control" placeholder="Find Cars, Mobile Phones and more">
+        </div>
+        
+        <button type="button" onClick="searc()" class="btn btn-default">
+            <span  class="glyphicon glyphicon-search"></span> 
+        </button>
+        
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-default" onclick="window.location.assign('./signin.html')">
+            login
+        </button>
+        <button type="button" class="btn" onclick="window.location.assign('./sell.html')">
+            sell
+        </button>
+    </form>
+</div>
+  </nav>
+  <!-- <img src="./olx.jpg" width="1350px"> -->
+  <div class="container">
+    <br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+
+    <!-- <div style="height: 500px;"  class="di1">
+  </div> -->
+  <img src="./olx.jpg" alt="Nature" class="responsive" width="600" height="400">
+  
+  </div>
+  
+ <h1>
+
+     Popular Categories
+    </h1>
+    <h4>
+
+        Browse through some of our most popular categories.
+    </h4>
+    
+    <center>
+            <div class="col-sm-4">
+        <button onClick="getdata('mobile')">
+            mobile
+        </button>
+        </div>
+    
+          <div class="col-sm-4">
+
+              <button onclick="getdata('bike')">
+                  bike
+                </button>
+                 </div>
+                 <div class="col-sm-4">
+        <button onclick="getdata('car')">
+            car
+        </button> </div>
+        <br><br><br>
+    </center>
+    <div class="container"  width="1px" height="1px" align="center">
+        <div id="main">
+            
+    </div> 
+    <script src="./pwabuilder-sw.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
